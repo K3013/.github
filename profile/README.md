@@ -185,7 +185,7 @@ float mtotalWeight = 1.0;
 finalColour /= mtotalWeight;
 ```
 Demo Video:
-![](http://www.youtube.com/watch?v=vKGCLTsGEak)
+![Motion Blur](https://github.com/user-attachments/assets/10280da8-3051-46d2-9100-22263faca048)
 
 ## Depth of Field:
 Depth of field is achieved through simulating a camera with a circular aperture. Primary ray origins are offset by a random distance within the bounds of the aperture size, and are traced towards a focal point. Focal distance is determined automatically by using the extent of a few primary rays cast from the center of the screen. Over each frame, the current focal distance is slowly incremented towards the target focal distance through a lerp function. Since the path tracer runs at one sample per pixel, rendering the effect with large apertures introduces significant noise. A Gaussian blur is applied to the scene with varying intensity, depending on the distance from the focal point to each primary ray intersection to account for the noise.
@@ -210,7 +210,9 @@ RayDesc generateThinLensCameraRay(float2 posNdcXy, inout rand_seed randSeed, flo
 ```
 
 Demo Video:
-![](http://www.youtube.com/watch?v=3kSjOb7tNYw)
+![DoF](https://github.com/user-attachments/assets/4a6f5cef-10fa-4ef6-9b22-1034ed710bd2)
+
+
 
 # Bug Fixes:
 ## Spectator Mode:
@@ -245,4 +247,4 @@ Normally within Minecraft, placing any block with an explicit point light (Torch
 The fog used by the darkness and blindness effects leaves a lot to be desired. Skylight leaks through the fog in both specular reflections and in transmission through water, ruining any sense of immersion these status effects could provide. The Darkness effect also failed to include the iconic exposure pulses present outside of the Ray Traced renderer. **BetterRTX** solves all of these issues, by properly implementing the fog gained from these effects into both specular reflections and in light transmission, making sure to implement periodic exposure pulses while under the Darkness effect to match the feature present in the rasterized Minecraft renderer.
 
 Demo Video:
-![](http://www.youtube.com/watch?v=TVbaB-LQ1-g&t=43s)
+![]([http://www.youtube.com/watch?v=TVbaB-LQ1-g&t=43s](http://www.youtube.com/watch?v=vKGCLTsGEak))
