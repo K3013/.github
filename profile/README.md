@@ -247,4 +247,4 @@ Normally within Minecraft, placing any block with an explicit point light (Torch
 The fog used by the darkness and blindness effects leaves a lot to be desired. Skylight leaks through the fog in both specular reflections and in transmission through water, ruining any sense of immersion these status effects could provide. The Darkness effect also failed to include the iconic exposure pulses present outside of the Ray Traced renderer. **BetterRTX** solves all of these issues, by properly implementing the fog gained from these effects into both specular reflections and in light transmission, making sure to implement periodic exposure pulses while under the Darkness effect to match the feature present in the rasterized Minecraft renderer.
 
 Demo Video:
-![]([http://www.youtube.com/watch?v=TVbaB-LQ1-g&t=43s](http://www.youtube.com/watch?v=vKGCLTsGEak))
+![](http://www.youtube.com/watch?v=TVbaB-LQ1-g&t=43s)
